@@ -18,23 +18,15 @@
       <button onclick="showabout()" class="menu-btn" id="about-btn">About</button>
     </div>
 
-    <div class="header" style="top: 130px;">
-      <div class="header-title" style="font-size: 1.2em; font-weight: normal; text-shadow: none; border: 2px solid #ffd900;">
-        <h3 style="margin-bottom: 10px; color: #ffd900;">Credits:</h3>
-        <ul style="list-style: none; padding-left: 0; margin: 0;">
-          <li>ABC - initial lapse release</li>
-          <li><a href="https://github.com/ctn123" target="_blank" style="color: #ffe600;">CTN</a></li>
-          <li><a href="https://github.com/al-azif" target="_blank" style="color: #ffe600;">Al-Azif</a></li>
-          <li><a href="https://github.com/ChendoChap" target="_blank" style="color: #ffe600;">Chendochap</a></li>
-          <li><a href="https://github.com/kmeps4" target="_blank" style="color: #ffe600;">kameleon</a></li>
-          <li><a href="https://github.com/Nazky" target="_blank" style="color: #ffe600;">Nazky</a></li>
-        </ul>
-        <p style="margin-top: 10px;">Please donate if you're in the position to. I've done all of this for you all on GitHub on my phone :(</p>
-        <p><strong>ETH:</strong> 0x2525bC1f865229C6B897353f64fFeF471B0B6e1b</p>
-        <p><strong>SOL:</strong> 7aE5Y7PvfUr52WnruiDATFpR99PWPo4q9U7vu3Hid3Yh</p>
-        <p><strong>TRX:</strong> TKdJXyopnrTafFvFuDJ2BA8j6yHRpWutuk</p>
-      </div>
-    </div>
+    <div class="header">
+  <div class="header-title">
+    Stay up to date by following:
+    <a href="https://x.com/bhanco2023" target="_blank" rel="noopener noreferrer">@bhanco2023 on X</a>
+    <a href="https://github.com/boredmonkeyman" target="_blank">boredmonkeyman on GitHub</a> |
+    <a href="https://t.me/boredmonkeymanschat" target="_blank">Telegram chat</a>
+  </div>
+</div>
+
 
     <pre id="update-results" style="white-space: pre-wrap; margin-top: 10px;"></pre>
 
@@ -61,59 +53,57 @@
       </nav>
       <div id="payloads-tools" style="display: block;">
         <h2 id="tools">Tools</h2>
-        <div id="button-container">
-          <button data-func="load_AppDumper">App-Dumper</button>
-          <button data-func="load_KernelDumper">Kernel-Dumper</button>
-          <button data-func="load_VTXDumper">PS4-Dumper-VTX</button>
-          <button data-func="load_App2USB">App2USB</button>
-          <button data-func="load_DisableUpdates">Disable-Updates</button>
-          <button data-func="load_EnableUpdates">Enable-Updates</button>
-          <button data-func="load_FTP">FTP</button>
-          <button data-func="load_HistoryBlocker">History-Blocker</button>
-          <button data-func="load_KernelClock">Kernel-Clock</button>
-          <button data-func="load_Orbis">Orbis-Toolbox</button>
-          <button data-func="load_PS4Debug">PS4-Debug</button>
-          <button data-func="load_ToDex">ToDex</button>
-          <button data-func="load_BackupDB">Backup-DB</button>
-          <button data-func="load_RestoreDB">Restore-DB</button>
-          <button data-func="load_RIFRenamer">RIF-Renamer</button>
-          <button data-func="load_ExitIDU">ExitIDU</button>
-          <button data-func="load_DisableASLR">Disable-ASLR</button>
-          <button data-func="load_ModuleDumper">Module-Dumper</button>
-          <button data-func="load_WebrRTE">WebRTE</button>
-          <button data-func="load_PermanentUART">Permanent-UART</button>
-          <button data-func="load_PUPDecrypt">PUP-Decrypt</button>
-        </div>
+          <div id="button-container">
+            <button data-func="load_AppDumper">App-Dumper</button>
+            <button data-func="load_KernelDumper">Kernel-Dumper</button>
+            <button data-func="load_VTXDumper">PS4-Dumper-VTX</button>
+            <button data-func="load_App2USB">App2USB</button>
+            <button data-func="load_DisableUpdates">Disable-Updates</button>
+            <button data-func="load_EnableUpdates">Enable-Updates</button>
+            <button data-func="load_FTP">FTP</button>
+            <button data-func="load_HistoryBlocker">History-Blocker</button>
+            <button data-func="load_KernelClock">Kernel-Clock</button>
+            <button data-func="load_Orbis">Orbis-Toolbox</button>
+            <button data-func="load_PS4Debug">PS4-Debug</button>
+            <button data-func="load_ToDex">ToDex</button>
+            <button data-func="load_BackupDB">Backup-DB</button>
+            <button data-func="load_RestoreDB">Restore-DB</button>
+            <button data-func="load_RIFRenamer">RIF-Renamer</button>
+            <button data-func="load_ExitIDU">ExitIDU</button>
+            <button data-func="load_DisableASLR">Disable-ASLR</button>
+            <button data-func="load_ModuleDumper">Module-Dumper</button>
+            <button data-func="load_WebrRTE">WebRTE</button>
+            <button data-func="load_PermanentUART">Permanent-UART</button>
+            <button data-func="load_PUPDecrypt">PUP-Decrypt</button>
+          </div>
       </div>
       <div id="payloads-game" style="display: none;">
         <h2 id="tools">Game</h2>
-        <div id="button-container">
-          <button data-func="load_GTAArbic">GTAV-ArabicGuy-1.27</button>
-          <button data-func="load_GTAArbic3">GTAV-ArabicGuy-1.32</button>
-          <button data-func="load_GTAArbic33">GTAV-ArabicGuy-1.33</button>
-          <button data-func="load_Oysters100">RDR2-OystersMenu-1.00</button>
-          <button data-func="load_Oysters113">RDR2-OystersMenu-1.13</button>
-          <button data-func="load_Oysters119">RDR2-OystersMenu-1.19</button>
-          <button data-func="load_Oysters124">RDR2-OystersMenu-1.24</button>
-        </div>
+          <div id="button-container">
+            <button data-func="load_GTAArbic">GTAV-ArabicGuy-1.27</button>
+            <button data-func="load_GTAArbic3">GTAV-ArabicGuy-1.32</button>
+            <button data-func="load_GTAArbic33">GTAV-ArabicGuy-1.33</button>
+            <button data-func="load_Oysters100">RDR2-OystersMenu-1.00</button>
+            <button data-func="load_Oysters113">RDR2-OystersMenu-1.13</button>
+            <button data-func="load_Oysters119">RDR2-OystersMenu-1.19</button>
+            <button data-func="load_Oysters124">RDR2-OystersMenu-1.24</button>
+          </div>
       </div>
       <div id="payloads-linux" style="display: none;">
-        <h2 id="tools">Linux</h2>
-        <div id="button-container">
-          <button data-func="load_Linux">Linux-1GB</button>
-          <button data-func="load_Linux2gb">Linux-2GB</button>
-          <button data-func="load_Linux3gb">Linux-3GB</button>
-          <button data-func="load_Linux4gb">Linux-4GB</button>
-          <button data-func="load_Linux5gb">Linux-5GB</button>
-        </div>
+          <h2 id="tools">Linux</h2>
+          <div id="button-container">
+            <button data-func="load_Linux">Linux-1GB</button>
+            <button data-func="load_Linux2gb">Linux-2GB</button>
+            <button data-func="load_Linux3gb">Linux-3GB</button>
+            <button data-func="load_Linux4gb">Linux-4GB</button>
+            <button data-func="load_Linux5gb">Linux-5GB</button>
+          </div>
       </div>
     </div>
     
     <h3>Debug Console</h3>
     
-    <div class="console" style="padding: 20px;">
-      <pre id='console'></pre>
-    </div>
+    <div class="console" style="padding: 20px;"><pre id='console'></pre></div>
 
     <!-- About Popup -->
     <div class="overlay" id="overlay-popup"></div>
@@ -121,7 +111,7 @@
       <h2>About PSFree</h2>
       <p>Version: 9.00</p>
       <p>A simple web interface for PS4 jailbreak.</p>
-      <button onclick="closeabout()" class="close-btn" id="close-about">Close</button>
+      <button  onclick="closeabout()" close-btn" id="close-about">Close</button>
     </div>
 
     <script src='./js/index.js'></script>
