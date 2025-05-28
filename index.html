@@ -15,6 +15,7 @@
       <button onclick="showpayloads()" class="menu-btn" id="payloadsbtn">Payloads</button>
       <button class="menu-btn" id="generate-cache-btn">Force-Cache</button>
       <button class="menu-btn" id="update-exploit">Update-Exploit</button>
+      <!--<button onclick="showpayloads()" class="menu-btn" id="payloadsbtn">Settings</button>-->
       <button onclick="showabout()" class="menu-btn" id="about-btn">About</button>
     </div>
 
@@ -40,7 +41,7 @@
         </button>
         <label>
           <input type="checkbox" id="autogoldhen" />
-          <p>Auto-GoldHEN</p>
+          <p id="agtext">Auto-GoldHEN</p>
         </label>
       </div>
     </div>
@@ -54,6 +55,8 @@
       <div id="payloads-tools" style="display: block;">
         <h2 id="tools">Tools</h2>
           <div id="button-container">
+            <!--<button data-func="HEN">HEN</button>-->
+            <button id="binloader">Bin-Loader</button>
             <button data-func="load_AppDumper">App-Dumper</button>
             <button data-func="load_KernelDumper">Kernel-Dumper</button>
             <button data-func="load_VTXDumper">PS4-Dumper-VTX</button>
@@ -66,6 +69,9 @@
             <button data-func="load_Orbis">Orbis-Toolbox</button>
             <button data-func="load_PS4Debug">PS4-Debug</button>
             <button data-func="load_ToDex">ToDex</button>
+            <button data-func="load_ToDev">ToDev</button>
+            <button data-func="load_ToKratos">ToKratos</button>
+            <button data-func="load_ToCex">ToCex</button>
             <button data-func="load_BackupDB">Backup-DB</button>
             <button data-func="load_RestoreDB">Restore-DB</button>
             <button data-func="load_RIFRenamer">RIF-Renamer</button>
@@ -83,10 +89,17 @@
             <button data-func="load_GTAArbic">GTAV-ArabicGuy-1.27</button>
             <button data-func="load_GTAArbic3">GTAV-ArabicGuy-1.32</button>
             <button data-func="load_GTAArbic33">GTAV-ArabicGuy-1.33</button>
+            <button data-func="load_GTABQ133">GTAV-BeefQueefMod-1.33</button>
+            <button data-func="load_GTABQ134">GTAV-BeefQueefMod-1.34</button>
+            <button data-func="load_GTABQ138">GTAV-BeefQueefMod-1.38</button>
+            <button data-func="load_GTAWM132">GTAV-WildeModz-1.32</button>
+            <button data-func="load_GTAWM133">GTAV-WildeModz-1.33</button>
+            <button data-func="load_GTAWM138">GTAV-WildeModz-1.38</button>
             <button data-func="load_Oysters100">RDR2-OystersMenu-1.00</button>
             <button data-func="load_Oysters113">RDR2-OystersMenu-1.13</button>
             <button data-func="load_Oysters119">RDR2-OystersMenu-1.19</button>
             <button data-func="load_Oysters124">RDR2-OystersMenu-1.24</button>
+            <button data-func="load_Oysters124">RDR2-OystersMenu-1.29</button>
           </div>
       </div>
       <div id="payloads-linux" style="display: none;">
@@ -101,9 +114,12 @@
       </div>
     </div>
     
-    <h3>Debug Console</h3>
+    <div id="DebugConsole">
+      <h3>Debug Console</h3>
     
-    <div class="console" style="padding: 20px;"><pre id='console'></pre></div>
+      <div class="console" style="padding: 20px;"><pre id='console'></pre></div>
+    </div>
+    
 
     <!-- About Popup -->
     <div class="overlay" id="overlay-popup"></div>

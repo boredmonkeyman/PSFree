@@ -29,9 +29,19 @@ function CheckFW() {
     document.getElementById('PS4FW').textContent = `PS4 FW: ${FwUAR} | Incompatible`;
     document.getElementById('PS4FW').style.color = 'red';
     document.getElementById('jailbreak-page').style.display = 'none';
+    document.getElementById('jailbreak').style.display = 'none';
+    document.getElementById('autogoldhen').style.display = 'none';
+    document.getElementById('agtext').style.display = 'none';
     document.getElementById('payloadsbtn').style.display = 'none';
+    document.getElementById('generate-cache-btn').style.display = 'none';
+    document.getElementById('update-exploit').style.display = 'none';
   };
 }
+
+if (isHttps()){
+  document.getElementById('generate-cache-btn').style.display = 'none';
+  document.getElementById('update-exploit').style.display = 'none';
+};
 
 function showpayloads() {
   if (document.getElementById('payloadsbtn').textContent == 'Payloads') {
@@ -72,7 +82,7 @@ function showlinuxpayloads() {
 async function jailbreak() {
   try {
     const modules = await loadMultipleModules([
-      '../payloads/GoldHEN.js',
+      '../payloads/Jailbreak.js',
       '../psfree/alert.mjs'
     ]);
     console.log("All modules are loaded!");
@@ -88,6 +98,26 @@ async function jailbreak() {
   }
 }
 
+async function binloader() {
+  try {
+    sessionStorage.setItem('binloader', 1);
+    const modules = await loadMultipleModules([
+      '../payloads/Jailbreak.js',
+      '../psfree/alert.mjs'
+    ]);
+    console.log("All modules are loaded!");
+
+    const goldhenModule = modules[0];
+    if (goldhenModule && typeof goldhenModule.runBinLoader === 'function') {
+      goldhenModule.runBinLoader();
+    } else {
+      console.error("GoldHEN function not found in GoldHEN.js module");
+    }
+  } catch (e) {
+    console.error("Failed to jailbreak:", e);
+  }
+}
+
 function isHttps() {
   return window.location.protocol === 'https:';
 }
@@ -95,7 +125,7 @@ function isHttps() {
 async function Loadpayloads(payload) {
   try {
     let modules;
-
+    sessionStorage.removeItem('binloader');
     if (isHttps()) {
       modules = await loadMultipleModules([
         '../payloads/payloads.js',
@@ -123,6 +153,11 @@ async function Loadpayloads(payload) {
 document.getElementById('jailbreak').addEventListener('click', () => {
   jailbreak();
 });
+
+document.getElementById('binloader').addEventListener('click', () => {
+  binloader();
+});
+
 
 document.querySelectorAll('button[data-func]').forEach(button => {
   button.addEventListener('click', () => {
@@ -171,8 +206,13 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   if (checkbox.checked) {
-    if (confirm('The jailbreak is going to start please confirm !\nWARNING :\nThis option make the jailbreak unstable and this option is not recommended please use the jailbreak button instead !')) {
-      jailbreak();
+    if (sessionStorage.getItem('jbsuccess')) {
+        console.log('Aleardy jailbroken !');
+    } else {
+        setTimeout(() => {
+            jailbreak();
+        }, 3000); // 3 seconds delay
+        
     }
   }
 

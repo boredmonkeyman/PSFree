@@ -1,6 +1,6 @@
 CACHE MANIFEST
 # v1
-# Generated on 2025-05-25 14:19:00.439709
+# Generated on 2025-05-28 11:45:35.388256
 
 CACHE:
 index.html
@@ -8,8 +8,7 @@ css/index.css
 fonts/FONTS.LICENSE
 fonts/LiberationMono-Regular.ttf
 js/index.js
-payloads/GoldHEN.bin
-payloads/GoldHEN.js
+payloads/Jailbreak.js
 payloads/payloads.js
 payloads/Bins/Dumper/appdumper.bin
 payloads/Bins/Dumper/kerneldumper.bin
@@ -18,7 +17,12 @@ payloads/Bins/Dumper/ps4-dumper-vtx-900.bin
 payloads/Bins/GTA/ArabicGuy-1.0-1.27-rfoodxmodz.bin
 payloads/Bins/GTA/ArabicGuy-1.0-1.32-rfoodxmodz.bin
 payloads/Bins/GTA/ArabicGuy-1.0-1.33-rfoodxmodz.bin
-payloads/Bins/GTA/gtavbq133-900-GraFfiX_221211.bin
+payloads/Bins/GTA/BeefQueefMod-1.33.bin
+payloads/Bins/GTA/BeefQueefMod-1.34.bin
+payloads/Bins/GTA/BeefQueefMod-1.38.bin
+payloads/Bins/GTA/WildeModz-1.32.bin
+payloads/Bins/GTA/WildeModz-1.33.bin
+payloads/Bins/GTA/WildeModz-1.38.bin
 payloads/Bins/Linux/LinuxLoader-900-2gb.bin
 payloads/Bins/Linux/LinuxLoader-900-3gb.bin
 payloads/Bins/Linux/LinuxLoader-900-4gb.bin
@@ -28,6 +32,7 @@ payloads/Bins/RDR2/OystersMenu-1.00-FREE.bin
 payloads/Bins/RDR2/OystersMenu-1.13-FREE.bin
 payloads/Bins/RDR2/OystersMenu-1.19-FREE.bin
 payloads/Bins/RDR2/OystersMenu-1.24-FREE.bin
+payloads/Bins/RDR2/OystersMenu-1.29-FREE.bin
 payloads/Bins/Tools/app2usb.bin
 payloads/Bins/Tools/backupdb.bin
 payloads/Bins/Tools/disableaslr.bin
@@ -45,8 +50,13 @@ payloads/Bins/Tools/pup-decrypt.bin
 payloads/Bins/Tools/restoredb.bin
 payloads/Bins/Tools/rif-renamer.bin
 payloads/Bins/Tools/rifrenamer.bin
+payloads/Bins/Tools/ToCex.bin
+payloads/Bins/Tools/ToDev.bin
 payloads/Bins/Tools/ToDex.bin
+payloads/Bins/Tools/ToKratos.bin
 payloads/Bins/Tools/WebRTE_900.bin
+payloads/GoldHEN/GoldHEN.bin
+payloads/HEN/HEN.bin
 psfree/alert.mjs
 psfree/config.mjs
 psfree/lapse.mjs
