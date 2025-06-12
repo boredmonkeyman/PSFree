@@ -1,7 +1,3 @@
-
-
-// 9.00
-
 export const pthread_offsets = new Map(
   Object.entries({
     pthread_create: 0x25510,
