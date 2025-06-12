@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>exploit</title>
+    <style>
+      @font-face {
+        font-family: "logging";
+        src: url("./fonts/LiberationMono-Regular.ttf");
+      }
+      #console {
+        font-family: "logging";
+      }
+    </style>
+    <script>
+    if (window.applicationCache && window.applicationCache.status === 0) {
+      window.location.replace("cache.html");
+    }
+  </script>
+  </head>
+  <body>
+  <pre id="console" style="display: none;"></pre>
+  </body>
+  <script type="module" src="./alert.mjs"></script>
+</html>

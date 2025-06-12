@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html manifest="psfree_lapse.cache">
+<head>
+    <title>PSFree-Lapse Exploit For PS4 9.00</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <style>
+        body {
+            background-image: url("bg.jpg");
+            background-repeat: no-repeat;
+            background-size: 70%;
+            background-position: center;
+            background-color: white;
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            margin: 0;
+            overflow: hidden;
+        }
+        .info {
+            overflow: hidden;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            font-size: 25px;
+            font-family: sans-serif;
+            color: black;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <script>
+        // Prevent back navigation to index.html
+        history.replaceState(null, null, 'index.html');
+        var histlength = history.length;
+        history.go(-histlength);
+
+        // Cache progress display
+        function DLProgress(e) {
+            var percent = Math.round(e.loaded / e.total * 100);
+            msgs.innerHTML = "Installing Offline Cache ... " + percent + "%";
+        }
+
+        function DisplayCacheProgress() {
+            setTimeout(function () {
+                msgs.innerHTML = "Installation done. Reopen the page.";
+            }, 2000);
+        }
+
+        // Application cache event handlers
+        if (window.applicationCache) {
+            window.applicationCache.addEventListener("progress", DLProgress, false);
+            window.applicationCache.oncached = function (e) {
+                DisplayCacheProgress();
+            };
+            window.applicationCache.onupdateready = function (e) {
+                DisplayCacheProgress();
+            };
+        }
+    </script>
+</head>
+<body>
+    <div id="msgs" class="info" style='-webkit-font-feature-settings:"tnum";font-feature-settings:"tnum";'></div>
+</body>
+</html>
