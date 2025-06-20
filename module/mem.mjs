@@ -1,4 +1,3 @@
-
 import { Int, lohi_from_one } from "./int64.mjs";
 import { view_m_vector, view_m_length } from "./offset.mjs";
 
