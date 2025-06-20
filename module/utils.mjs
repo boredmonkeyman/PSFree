@@ -1,4 +1,3 @@
-
 import { Int } from "./int64.mjs";
 
 export class DieError extends Error {
