@@ -1,4 +1,3 @@
-
 // offsets for JSC::JSObject
 export const js_cell = 0;
 export const js_butterfly = 0x8;
