@@ -19,7 +19,6 @@ kpatch/850.bin
 kpatch/900.bin
 kpatch/903.bin
 kpatch/950.bin
-kpatch/Makefile
 lapse/ps4/700.mjs
 lapse/ps4/750.mjs
 lapse/ps4/751.mjs
@@ -43,9 +42,6 @@ rop/ps4/800.mjs
 rop/ps4/850.mjs
 rop/ps4/900.mjs
 rop/ps4/950.mjs
-kpatch/types.h
-kpatch/utils.h
-kpatch/script.ld
 
 NETWORK:
 *
