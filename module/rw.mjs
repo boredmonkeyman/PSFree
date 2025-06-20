@@ -1,4 +1,3 @@
-
 import { Int, lohi_from_one } from "./int64.mjs";
 
 // DataView's accessors are constant time and are faster when doing multi-byte
