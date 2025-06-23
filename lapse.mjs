@@ -1846,7 +1846,7 @@ function runPayload(path) {
 
 kexploit().then((success) => {
   if (success) {
-    runPayload("./payload.bin");
+    runPayload("./GoldHEN.bin");
     // runBinLoader();
   }
 });
