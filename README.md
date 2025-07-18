@@ -1,9 +1,5 @@
 update:
 
-project will be abandoned as it is
-
-I’ve had to sell my PS4 recently to support my family during a tough time. It wasn’t an easy decision, but one I had to make. I still hope to eventually fund a PS5, not just to enjoy gaming again, but to contribute meaningfully to the PS5 and FPKG scenes in the future.
-
 This project is currently maintained by a developer working entirely from a phone. If you find this tool helpful, please consider supporting to help me upgrade to a proper PC setup—and maybe one day, a PS5 for further development.
 
 **Crypto Donations:**
